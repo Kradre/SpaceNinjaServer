@@ -1,7 +1,7 @@
 import { RequestHandler } from "express";
 
 const placeDecoInController: RequestHandler = (_req, res) => {
-    res.sendStatus(200);
+    res.json({});
 };
 
 export { placeDecoInController };
