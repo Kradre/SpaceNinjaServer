@@ -66,6 +66,7 @@ import { updateChallengeProgressController } from "@/src/controllers/api/updateC
 import { updateSessionGetController, updateSessionPostController } from "@/src/controllers/api/updateSessionController";
 import { updateThemeController } from "../controllers/api/updateThemeController";
 import { upgradesController } from "@/src/controllers/api/upgradesController";
+import { placeDecoInController } from "@/src/controllers/api/placeDecoInController";
 
 const apiRouter = express.Router();
 
@@ -142,5 +143,6 @@ apiRouter.post("/updateNodeIntros.php", genericUpdateController);
 apiRouter.post("/updateSession.php", updateSessionPostController);
 apiRouter.post("/updateTheme.php", updateThemeController);
 apiRouter.post("/upgrades.php", upgradesController);
+apiRouter.post("/placeDecoInComponent.php",placeDecoInController)
 
 export { apiRouter };
